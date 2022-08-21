@@ -10,6 +10,7 @@ const ProductState = (props) => {
   const getProductList = async () => {
     try {
       const url = `${host}/`;
+      console.log(url);
       const response = await fetch(url, {
         method: "GET",
         headers: {
